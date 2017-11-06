@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery a {
+  flex: 1 1 25%;
+  padding: 0.5em;
+}
+
+.gallery img {
+  transition: .3s;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
