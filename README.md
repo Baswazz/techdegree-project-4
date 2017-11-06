@@ -1,1 +1,3 @@
-# techdegree-project-4
+### Project instructions
+
+https://teamtreehouse.com/projects/interactive-photo-gallery
