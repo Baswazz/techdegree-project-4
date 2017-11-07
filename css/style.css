@@ -5,6 +5,7 @@
 body {
   font-family: 'Muli', sans-serif;
   font-weight: 400;
+  font-size: 1em;
 }
 
 img {
@@ -12,8 +13,12 @@ img {
 }
 
 .container {
-  padding-right: 1em;
-  padding-left: 1em;
+  padding-right: .5em;
+  padding-left: .5em;
+}
+
+.search {
+  padding: 1em .5em .5em;
 }
 
 .gallery {
@@ -22,18 +27,53 @@ img {
 }
 
 .gallery a {
-  flex: 1 1 25%;
-  padding: 0.5em;
+  flex: 1 1 50%;
+  padding: .5em;
 }
 
 .gallery img {
   transition: .3s;
 }
 
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+input {
+  width: 100%;
+  border: 2px solid #ddd;
+  padding: 10px 15px;
+  transition: .3s;
+  border-radius: 5px;
+  font-family: 'Muli', sans-serif;
+}
+
+input:focus {
+  border: 2px solid #2196F3;
+  background-color: #fff;
+  outline: none;
+}
+
+/* simplelightbox */
+.sl-overlay {
+  opacity: .8;
+}
+
 @media (min-width: 768px) {
+  .search {
+    padding: 1em 1em .5em;
+  }
+
+  .gallery a {
+    flex: 1 1 25%;
+    padding: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
   .container {
-    width: 70%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 920px;
     margin: 0 auto;
   }
 }
